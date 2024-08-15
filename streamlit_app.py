@@ -10,3 +10,11 @@ with st.expander('Data'):
   # Read in the data
   df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
   df # Display df in the app
+
+  st.write('**X**')
+  X = df.drop('species', axis=1)
+  X
+
+  st.write('**Y**')
+  Y = df.species
+  Y
